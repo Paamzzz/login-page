@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 right">
+                    <div class="input-box">
+                        <div class="back-button">
+                            <a href="javascript:history.back()">
+                                <button type="button" class="back-button">⟵ Voltar</button>
+                            </a>
+                        </div>
+                        <div class="imglogo" id="logo">
+                            <img src="img/logo.png" alt="logo" width="150" height="auto">
+                        </div>
+                        <header>Bem-vindo de volta!</header>
+                        <p>Conecte-se em sua conta usando as informações colocadas no cadastro.</p>
+
+                        <form action="" method="">
+                            <div class="input-field">
+                                <input type="text" class="input" id="email" name="email" required="" autocomplete="off">
+                                <label for="email">Digite seu email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" class="input" id="password" name="password" required="">
+                                <label for="password">Digite sua senha</label>
+                                <button type="button" id="togglePassword">
+                                    <img id="passwordIcon" src="img/olhofechado.png" alt="Olho Fechado">
+                                </button>
+                            </div>
+                            <div class="input-field">
+                                <input type="submit" class="submit" value="Login">
+                            </div>
+                        </form>
+                        <div class="signin">
+                            <span>Não tem uma conta? <a href="">Crie uma agora!</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 side-image">
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+    </html>

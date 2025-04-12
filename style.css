@@ -1,0 +1,219 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #ececec;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; 
+}
+
+.side-image {
+    flex: 1;
+    background-image: url("./img/homemmalhando.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    font-size: 35px;
+    font-family: 'Bricolage Grotesque';
+}
+
+.input-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 85px;
+    color: #fd7702;
+    background-color: #dbd7d700;
+    font-family: "Poppins";
+    border-radius: 6px;
+    border: none;
+    transition: .4s;
+}
+
+.back-button:hover {
+    background-color: #fd7702;
+    border-color: #fd7702;
+    color: #ffffff;
+}
+
+.imglogo {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.input-box header {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+
+.input-box p {
+    font-size: 14px;
+    color: #161616;
+    margin-bottom: 50px;
+}
+
+.input-field {
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #40414a;
+    padding-right: 40px; /* Espaco para o icone do olho */
+}
+
+span #togglePassword.material-symbols-outlined {
+    position: absolute;
+    cursor: pointer;
+    
+}
+
+#eye_icon {
+    position: absolute;
+    width: 23px;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#togglePassword {
+    border: none;
+    cursor: pointer;
+
+}
+
+.input-box .input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+
+.input-field .input:focus,
+.input-field .input:valid {
+    border-bottom: 1px solid #743ae1;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #FD7702;
+    border-radius: 8px;
+    transition: .4s;
+    font-weight: bold;
+    padding: 10px 70px 10px 70px;
+}
+
+.submit:hover {
+    background: #f89843;
+    color: #fff;
+}
+
+.signin {
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+
+span a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+
+span a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .side-image {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+        height: 100%;
+    }
+}
